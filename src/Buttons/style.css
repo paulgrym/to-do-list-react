@@ -1,4 +1,4 @@
-.buttonsContainer {
+.buttons {
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -6,13 +6,13 @@
 }
 
 @media (max-width:768px) {
-    .buttonsContainer {
+    .buttons {
         flex-direction: column;
         margin-bottom: 20px;
     }
 }
 
-.buttonsContainer__button {
+.buttons__button {
     border: none;
     background-color: inherit;
     color: hsl(180, 100%, 25%);
@@ -21,10 +21,10 @@
     transition: color 0.4s
 }
 
-.buttonsContainer__button:hover {
+.buttons__button:hover {
     color: hsl(180, 100%, 35%);
 }
 
-.buttonsContainer__button:disabled {
+.buttons__button:disabled {
     color: #888;
 }
