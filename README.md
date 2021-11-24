@@ -1,5 +1,5 @@
 # To do list
-This is the project of a simple "to do list" app without interactions yet.
+This is the project of a simple "to do list" app.
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Demo
