@@ -8,8 +8,8 @@ import Container from "./Container";
 
 function App() {
   const getTasks = () => {
-    const initialValue = JSON.parse(localStorage.getItem("tasks"));
-    return initialValue || []
+    const initialTasks = JSON.parse(localStorage.getItem("tasks"));
+    return initialTasks || []
   };
   
   const [hideDone, setHideDone] = useState(false);
