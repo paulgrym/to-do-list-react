@@ -6,6 +6,10 @@ const Form = ({ addNewTask }) => {
   const [newTaskContent, setNewTaskContent] = useState("");
   const inputRef = useRef(null);
 
+  const focusInput = () => {
+    inputRef.current.focus();
+  }
+
   const onFormSubmit = (event) => {
     event.preventDefault();
     const trimmedNewTaskContent = newTaskContent.trim();
@@ -14,7 +18,6 @@ const Form = ({ addNewTask }) => {
     };
     addNewTask(trimmedNewTaskContent);
     setNewTaskContent("");
-    inputRef.current.focus();
   };
 
   return (
@@ -26,7 +29,7 @@ const Form = ({ addNewTask }) => {
         ref={inputRef}
         autoFocus
       />
-      <StyledButton>
+      <StyledButton onClick={focusInput}>
         Dodaj zadanie
       </StyledButton>
     </StyledForm>
