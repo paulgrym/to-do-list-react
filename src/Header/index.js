@@ -1,8 +1,8 @@
-import { StyledTitle } from "./styled";
+import { Title } from "./styled";
 
 const Header = ({ title }) => (
   <header>
-    <StyledTitle>{title}</StyledTitle>
+    <Title>{title}</Title>
   </header>
 );
 

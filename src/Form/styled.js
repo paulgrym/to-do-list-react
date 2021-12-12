@@ -9,13 +9,13 @@ export const StyledForm = styled.form`
   }
 `;
 
-export const StyledInput = styled.input`
+export const Input = styled.input`
   flex-grow: 1;
   padding: 10px;
   border: 1px solid #ddd;
 `;
 
-export const StyledButton = styled.button`
+export const Button = styled.button`
   background-color: ${({ theme }) => theme.colors.primaryColor};
   color: white;
   border: none;
@@ -23,22 +23,22 @@ export const StyledButton = styled.button`
   margin-left: 20px;
   transition: background-color 0.3s, transform 0.3s;
 
-  @media (max-width:${({ theme }) => theme.breakpoints.medium}px){
+  @media (max-width:${({ theme }) => theme.breakpoints.medium}px) {
     margin-left: 0;
     margin-top: 10px;
   }
 
-  &:hover{
+  &:hover {
     background-color: ${({ theme }) => theme.colors.hoverColor};
     cursor: pointer;
     transform: scale(1.1);
 
-    @media (max-width:${({ theme }) => theme.breakpoints.medium}px){
+    @media (max-width:${({ theme }) => theme.breakpoints.medium}px) {
       transform: scale(1.05);
     }
   }
 
-  &:active{
+  &:active {
     background-color: ${({ theme }) => theme.colors.activeColor};
   }
 `;

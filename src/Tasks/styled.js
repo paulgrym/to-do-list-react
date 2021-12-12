@@ -1,11 +1,11 @@
 import styled, { css } from "styled-components";
 
-export const StyledList = styled.ul`
+export const List = styled.ul`
   padding: 0 20px 20px;
   margin-top: 20px;
 `;
 
-export const StyledItem = styled.li`
+export const ListItem = styled.li`
   list-style-type: none;
   border-bottom: 1px solid #ddd;
   padding: 10px;
@@ -19,13 +19,13 @@ export const StyledItem = styled.li`
   `}
 `;
 
-export const StyledContent = styled.span`
+export const TaskContent = styled.span`
   ${({ done }) => done && css`
     text-decoration:line-through;
   `}
 `;
 
-export const StyledButton = styled.button`
+export const Button = styled.button`
   height: 30px;
   width: 30px;
   background-color: hsl(120, 88%, 27%);
@@ -34,23 +34,23 @@ export const StyledButton = styled.button`
   border: none;
   transition: 0.4s;
 
-  &:hover{
+  &:hover {
   background-color: hsl(120, 88%, 32%);
   cursor: pointer;
   }
 
-  &:active{
+  &:active {
     background-color: hsl(120, 88%, 37%);
   }
 
   ${({ remove }) => remove && css`
     background-color: hsl(0, 93%, 58%);
 
-    &:hover{
+    &:hover {
       background-color: hsl(0, 93%, 63%);
     }
 
-    &:active{
+    &:active {
       background-color: hsl(0, 93%, 68%);
     }
   `}

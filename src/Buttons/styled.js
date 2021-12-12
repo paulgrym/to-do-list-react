@@ -6,13 +6,13 @@ export const StyledButtons = styled.div`
   justify-content: flex-end;
   flex-grow: 1;
 
-  @media (max-width:${({ theme }) => theme.breakpoints.small}px){
+  @media (max-width:${({ theme }) => theme.breakpoints.small}px) {
     flex-direction: column;
     margin-bottom: 20px;
   }
 `;
 
-export const StyledButton = styled.button`
+export const Button = styled.button`
   border: none;
   background-color: inherit;
   color: ${({ theme }) => theme.colors.primaryColor};
@@ -20,12 +20,12 @@ export const StyledButton = styled.button`
   margin: 0 0 0 20px;
   transition: color 0.4s;
 
-  &:hover{
+  &:hover {
     color: ${({ theme }) => theme.colors.hoverColor};
     cursor: pointer;
   }
 
-  &:disabled{
+  &:disabled {
     color: #888;
   }
 `;
