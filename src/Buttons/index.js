@@ -8,6 +8,7 @@ const Buttons = ({ tasks, hideDone, toggleHideDone, setAllDone }) => {
     <StyledButtons>
       <Button
         onClick={toggleHideDone}
+        disabled={tasks.every(({ done }) => !done)}
       >
         {hideDone ? "Pokaż" : "Ukryj"} ukończone
       </Button>
