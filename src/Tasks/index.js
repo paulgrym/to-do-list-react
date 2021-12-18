@@ -8,7 +8,6 @@ const Tasks = ({ tasks, hideDone, removeTask, toggleTaskDone }) => (
         hidden={task.done && hideDone}
       >
         <Button
-          className="list__button"
           onClick={() => toggleTaskDone(task.id)}
         >
           {task.done ? "✓" : ""}
