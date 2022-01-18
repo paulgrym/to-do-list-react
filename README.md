@@ -39,8 +39,11 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 ## Technologies
 - HTML
+- ES6+
 - CSS (Flex, Grid)
-- BEM convention
 - MediaQueries
 - React
 - Create-react-app
+- Styled-components
+- ThemeProvider
+- Redux / Toolkit
