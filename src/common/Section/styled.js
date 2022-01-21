@@ -13,6 +13,7 @@ export const Header = styled.header`
 
   @media (max-width:${({ theme }) => theme.breakpoints.small}px) {
     flex-direction: column;
+    align-items: center;
   }
 `;
 

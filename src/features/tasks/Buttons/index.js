@@ -1,47 +1,35 @@
-import { useDispatch, useSelector } from "react-redux";
-import {
-  toggleHideDone,
-  setAllDone,
-  selectIsEveryTaskDone,
-  selectIsEveryTaskUndone,
-  selectHideDone,
-  selectAreTasksEmpty,
-  fetchExampleTasks
-} from "../tasksSlice";
-import { StyledButtons, Button } from "./styled";
+import styled from "styled-components";
 
-const Buttons = () => {
-  const hideDone = useSelector(selectHideDone);
-  const isEveryTaskDone = useSelector(selectIsEveryTaskDone);
-  const isEveryTaskUndone = useSelector(selectIsEveryTaskUndone);
-  const areTasksEmpty = useSelector(selectAreTasksEmpty);
-  const dispatch = useDispatch();
+export const StyledButtons = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-grow: 1;
 
-  return (
-    <StyledButtons>
-      <Button
-        onClick={() => dispatch(fetchExampleTasks())}
-      >
-        Pobierz przykładowe zadania
-      </Button>
-      {!areTasksEmpty && (
-        <>
-          <Button
-            onClick={() => dispatch(toggleHideDone())}
-            disabled={isEveryTaskUndone}
-          >
-            {hideDone ? "Pokaż" : "Ukryj"} ukończone
-          </Button>
-          <Button
-            onClick={() => dispatch(setAllDone())}
-            disabled={isEveryTaskDone}
-          >
-            Ukończ wszystkie
-          </Button>
-        </>
-      )}
-    </StyledButtons>
-  )
-};
+  @media (max-width:${({ theme }) => theme.breakpoints.small}px) {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+`;
 
-export default Buttons;
+export const Button = styled.button`
+  border: none;
+  background-color: inherit;
+  color: ${({ theme }) => theme.colors.primaryColor};
+  padding: 10px 0;
+  margin: 0 0 0 20px;
+  transition: color 0.4s;
+
+  &:hover {
+    color: ${({ theme }) => theme.colors.hoverColor};
+    cursor: pointer;
+  }
+
+  &:disabled {
+    color: #888;
+  }
+
+  @media (max-width:${({ theme }) => theme.breakpoints.small}px) {
+    margin: 0;
+  }
+`;
