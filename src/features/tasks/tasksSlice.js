@@ -1,9 +1,10 @@
 import { createSlice } from '@reduxjs/toolkit';
+import { getTasksFromLocaleStorage } from './tasksLocalStorage';
 
 const tasksSlice = createSlice({
   name: 'tasks',
   initialState: {
-    tasks: [],
+    tasks: getTasksFromLocaleStorage(),
     hideDone: false,
   },
   reducers: {
@@ -51,7 +52,3 @@ export const selectIsEveryTaskUndone = state => selectTasks(state).every(({ done
 export const selectAreTasksEmpty = state => selectTasks(state).length === 0;
 
 export default tasksSlice.reducer;
-
-// setExampleTasks: ({ tasks }, { payload: exampleTasks }) => {
-//   tasks.push(exampleTasks);
-// }
