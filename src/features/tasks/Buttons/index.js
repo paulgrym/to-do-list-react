@@ -26,7 +26,7 @@ export const Button = styled.button`
   }
 
   &:disabled {
-    color: #888;
+    color: #c0c0c5;
   }
 
   @media (max-width:${({ theme }) => theme.breakpoints.small}px) {
