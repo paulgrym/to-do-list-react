@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, {css} from "styled-components";
 
 export const StyledButtons = styled.div`
   display: flex;
@@ -27,6 +27,7 @@ export const Button = styled.button`
 
   &:disabled {
     color: #c0c0c5;
+    cursor: not-allowed;
   }
 
   @media (max-width:${({ theme }) => theme.breakpoints.small}px) {
