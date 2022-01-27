@@ -1,11 +1,11 @@
-import styled from "styled-components";
+import styled, {css} from "styled-components";
 
 export const StyledSection = styled.section`
   background-color: white;
   box-shadow: 1px -1px 5px 0px #DDDDDD;
 `;
 
-export const Header = styled.header`
+export const StyledHeader = styled.header`
   display: flex;
   border-bottom: 1px solid #ddd;
   margin-top: 10px;
