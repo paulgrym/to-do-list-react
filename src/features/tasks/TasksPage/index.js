@@ -1,12 +1,12 @@
 import Form from "./Form";
 import TaskList from "./TaskList";
-import Section from "../../common/Section";
-import Header from "../../common/Header";
-import { Container } from "../../common/Container";
+import Section from "../../../common/Section";
+import Header from "../../../common/Header";
+import { Container } from "../../../common/Container";
 import FormButtons from "./FormButtons";
 import TaskListButtons from "./TaskListButtons";
 
-const Tasks = () => {
+const TasksPage = () => {
 
   return (
     <Container>
@@ -26,4 +26,4 @@ const Tasks = () => {
   );
 }
 
-export default Tasks;
+export default TasksPage;
