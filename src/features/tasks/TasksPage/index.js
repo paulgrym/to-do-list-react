@@ -5,6 +5,7 @@ import Header from "../../../common/Header";
 import { Container } from "../../../common/Container";
 import FormButtons from "./FormButtons";
 import TaskListButtons from "./TaskListButtons";
+import Search from "./Search";
 
 const TasksPage = () => {
 
@@ -15,6 +16,11 @@ const TasksPage = () => {
         title="Dodaj nowe zadanie"
         body={<Form />}
         extraHeaderContent={<FormButtons />}
+      />
+
+      <Section
+        title="Wyszukiwarka"
+        body={<Search />}
       />
 
       <Section

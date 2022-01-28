@@ -9,12 +9,6 @@ export const StyledForm = styled.form`
   }
 `;
 
-export const Input = styled.input`
-  flex-grow: 1;
-  padding: 10px;
-  border: 1px solid #ddd;
-`;
-
 export const Button = styled.button`
   background-color: ${({ theme }) => theme.colors.primaryColor};
   color: white;
