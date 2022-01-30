@@ -1,8 +1,8 @@
 import { Input } from "../Input";
+import { useQueryParameter, useReplaceQueryParameter } from "../queryParameters";
 import searchQueryParamName from "../searchQueryParamName";
 import { Wrapper } from "./styled";
-import { useQueryParameter } from "./useQueryParameter";
-import { useReplaceQueryParameter } from "./useReplaceQueryParameter";
+
 
 const Search = () => {
   const query = useQueryParameter(searchQueryParamName);
@@ -10,8 +10,8 @@ const Search = () => {
 
   const onInputChange = ({ target }) => {
     replaceQueryParameter({
-      key:searchQueryParamName,
-      value:target.value.trim() !=="" ? target.value : undefined,
+      key: searchQueryParamName,
+      value: target.value.trim() !== "" ? target.value : undefined,
     })
   };
 
