@@ -1,15 +1,13 @@
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 
-export const StyledNavigation = styled.nav`
-  background-color:${({ theme }) => theme.colors.primaryColor};
-`
-
 export const NavigationList = styled.ul`
+  background-color:${({ theme }) => theme.colors.primaryColor};
   display:flex;
   padding:16px 0;
   margin:0;
   justify-content:center;
+  list-style:none;
 
   @media (max-width:${({ theme }) => theme.breakpoints.small}px) {
       flex-direction: column;
@@ -18,7 +16,6 @@ export const NavigationList = styled.ul`
 `
 
 export const NavigationItem = styled.li`
-  list-style:none;
   margin:6px 20px;
 `
 
