@@ -1,9 +1,40 @@
-# To do list
-This is the project of a simple "to do list" app.
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# ✅ To-do list in React
 
+Welcome to my "to-do list" app!
+
+This project is a part of the Frontend Developer course that I'm participating in and was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Table od content
+
+* [Demo](#demo)
+* [Preview](#preview)
+* [How to use](#how-to-use)
+* [Available scripts](#available-scripts)
+* [Technologies](#technologies)
 ## Demo
+
 You can find a demo [here](https://paulgrym.github.io/to-do-list-react/).
+
+## Preview
+
+![How to use gif ](public/images/Animation.gif)
+
+## How to use
+At the top of the page you can see a navigation to a tasks page and to an author page.
+
+The author page is very simple - it contains a short info about me, whereas the tasks page is more complex and it consists of as many as three blocks. These block are as follows:
+
+### `Tasks adding block` 
+
+In this block you can add as many tasks as you want or download example tasks by clicking "Pobierz przykładowe zadania" button. Tasks will appear below - in "Tasks list block" creating the list.
+### `Search bar block`
+
+With its use you can filter tasks.
+### `Tasks list block`
+ 
+ In this block every task added in "Tasks adding block" is displayed in a company of two buttons - green and red. By clicking the green one you can mark and unmark the task as done. Red button is for removing tasks from the list. You can go to the subpage of each task with one click on its content.  
+
+ Additionally, you can hide completed tasks by clicking "Ukryj ukończone" button" or you can mark all of tasks as done by clicking "Ukończ wszystkie" button.
 
 ## Available Scripts
 
@@ -38,12 +69,20 @@ Instead, it will copy all the configuration files and the transitive dependencie
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
 ## Technologies
+
 - HTML
-- ES6+
-- CSS (Flex, Grid)
-- MediaQueries
+- JavaScript (ES6+)
+- CSS (Flex, Grid, media queries)
 - React
 - Create-react-app
 - Styled-components
 - ThemeProvider
 - Redux / Toolkit
+- Redux-Saga
+- React Router
+- Custom Hooks
+- Promises, async/await
+- Local storage
+
+
+
