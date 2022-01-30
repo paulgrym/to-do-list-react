@@ -17,7 +17,7 @@ You can find a demo [here](https://paulgrym.github.io/to-do-list-react/).
 
 ## Preview
 
-![How to use gif ](public/images/Animation.gif)
+![How to use gif ](./animation.gif)
 
 ## How to use
 At the top of the page you can see a navigation to a tasks page and to an author page.
