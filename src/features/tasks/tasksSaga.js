@@ -1,5 +1,10 @@
 import { takeLatest, takeEvery, call, put, delay, select } from "redux-saga/effects";
-import { fetchExampleTasks, selectTasks, setExampleTasks, fetchExampleTasksError } from "./tasksSlice";
+import {
+  fetchExampleTasks,
+  selectTasks,
+  fetchExampleTasksSuccess,
+  fetchExampleTasksError
+} from "./tasksSlice";
 import { getExampleTasks } from "./getExampleTasks"
 import { nanoid } from "@reduxjs/toolkit";
 import { saveTasksInLocalStorage } from "./tasksLocalStorage";
@@ -12,7 +17,7 @@ function* fetchExampleTasksHandler() {
       ...exampleTask,
       id: nanoid(),
     }));
-    yield put(setExampleTasks(exampleTasksWithIds));
+    yield put(fetchExampleTasksSuccess(exampleTasksWithIds));
   } catch (error) {
     yield put(fetchExampleTasksError());
     yield call(alert, "Coś poszło nie tak");

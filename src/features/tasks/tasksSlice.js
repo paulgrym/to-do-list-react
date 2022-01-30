@@ -29,14 +29,14 @@ const tasksSlice = createSlice({
       }
     },
     fetchExampleTasks: (state) => {
-      state.loading = true
+      state.loading = true;
     },
-    setExampleTasks: (state, { payload: tasks }) => {
+    fetchExampleTasksSuccess: (state, { payload: tasks }) => {
       state.tasks.push(...tasks);
       state.loading = false;
     },
     fetchExampleTasksError: (state) => {
-      state.loading = false
+      state.loading = false;
     },
 
   },
@@ -49,7 +49,7 @@ export const {
   removeTask,
   setAllDone,
   fetchExampleTasks,
-  setExampleTasks,
+  fetchExampleTasksSuccess,
   fetchExampleTasksError,
 } = tasksSlice.actions;
 
