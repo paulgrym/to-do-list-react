@@ -1,8 +1,8 @@
-import Section from "../../common/Section";
-import Header from "../../common/Header";
-import { Container } from "../../common/Container";
+import Section from "../../../common/Section";
+import Header from "../../../common/Header";
+import { Container } from "../../../common/Container";
 import { Wrapper, IconContainer, Icon, LinkSocialMedia, LinkIcon, Paragraph } from "./styled";
-import icon from "../../images/instagram.svg"
+import icon from "../../../images/instagram.svg"
 
 const AuthorPage = () => (
   <Container>
