@@ -16,6 +16,7 @@ function* fetchExampleTasksHandler() {
     const exampleTasksWithIds = exampleTasks.map(exampleTask => ({
       ...exampleTask,
       id: nanoid(),
+      addDate: new Date().toLocaleString()
     }));
     yield put(fetchExampleTasksSuccess(exampleTasksWithIds));
   } catch (error) {

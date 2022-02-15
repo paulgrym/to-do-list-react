@@ -19,7 +19,12 @@ const TaskPage = () => {
           <TaskContent>
             {!!task && (
               <>
-                <strong>Ukończono:</strong> {task.done ? "Tak" : "Nie"}
+                <p>
+                  <strong>Ukończono:&nbsp;</strong> {task.done ? "Tak" : "Nie"}
+                </p>
+                <p>
+                  <strong>Data dodania:&nbsp;</strong>{task.addDate}
+                </p>
               </>
             )}
           </TaskContent>

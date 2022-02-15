@@ -26,6 +26,7 @@ const Form = () => {
       content: newTaskContent,
       done: false,
       id: nanoid(),
+      addDate: new Date().toLocaleString(),
     }))
     setNewTaskContent("");
   };
