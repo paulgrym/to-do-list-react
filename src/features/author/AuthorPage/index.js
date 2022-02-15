@@ -21,7 +21,10 @@ const AuthorPage = () => (
             >
               <Icon src={icon} alt="ig icon" />
             </LinkSocialMedia>
-            <LinkIcon href="https://icons8.com/icon/Xy10Jcu1L2Su/instagram">
+            <LinkIcon
+              href="https://icons8.com/icon/Xy10Jcu1L2Su/instagram"
+              rel="noopener noreferrer"
+              target="_blank">
               Instagram icon by Icons8
             </LinkIcon>
           </IconContainer>
