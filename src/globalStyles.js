@@ -13,7 +13,6 @@ export const GlobalStyle = createGlobalStyle`
     font-family: 'Montserrat', sans-serif;
     background-color: #eee;
     margin: 0;
-    word-break: break-all;
     overflow-y:scroll;
   }
 `;

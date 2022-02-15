@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export const List = styled.ul`
   padding: 0 20px 20px;
@@ -14,6 +14,7 @@ export const ListItem = styled.li`
   grid-template-columns: auto 1fr auto;
   grid-gap: 10px;
   align-items: center;
+  word-break: break-all;
 
   ${({ hidden }) => hidden && css`
     display:none;
